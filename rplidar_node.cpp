@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-# =============================================
-# 함께 사용되는 각종 파이썬 패키지들의 import 선언부
-# =============================================
 import numpy as np
 import cv2, math
 import rospy, rospkg, time
