@@ -1,17 +1,4 @@
 
-import numpy as np
-import cv2, math
-import rospy, rospkg, time
-from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
-from xycar_msgs.msg import xycar_motor
-from math import *
-import signal
-import sys
-import os
-import random
-
-
 # =============================================
 # 터미널에서 Ctrl-C 키입력으로 프로그램 실행을 끝낼 때
 # 그 처리시간을 줄이기 위한 함수
