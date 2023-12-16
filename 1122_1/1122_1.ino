@@ -25,10 +25,10 @@ void setup() {
   myservo3.attach(10); // 뒤왼
   myservo4.attach(12); // 뒤오
 
-  myservo1.write(0);
-  myservo2.write(0);
-  myservo3.write(0);
-  myservo4.write(0);
+  myservo1.write(90); //우리가 원하는 수평방향 초기값 90
+  myservo2.write(90);
+  myservo3.write(90);
+  myservo4.write(90);
 }
 
 void loop() {
@@ -58,10 +58,10 @@ void loop() {
 
     // 여기서 서보모터 초기화 또는 원하는 동작 수행
     if (abs(mpu.getGyroX()) < angchange) {
-      myservo1.write(0);
-      myservo2.write(0);
-      myservo3.write(0);
-      myservo4.write(0);
+      myservo1.write(90); //초기값으로 변경
+      myservo2.write(90);
+      myservo3.write(90);
+      myservo4.write(90);
       Serial.println(abs(mpu.getGyroX()));
       Serial.println("차고 높이 초기화");
     } else {
