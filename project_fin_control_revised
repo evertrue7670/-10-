@@ -73,8 +73,9 @@ void loop() {
     slopefinish = millis() + 15000;
     while( millis() < slopefinish){
        dis = dislimit-1;
-    
-      if(millis() - slopedetect > (dis/1)*300) {
+    //여기서 dis고정하는게 아니라 딜레이 주고 '경사로 위다' 라는 bool 연산 추가하는 방향으로 수정해야할듯
+
+if(millis() - slopedetect > (dis/1)*300) {
         Serial.println("경사로 진입");
         Serial.print("각도변화 = ");
         Serial.println(mpu.getGyroX());
